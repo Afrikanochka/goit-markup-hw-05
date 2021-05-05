@@ -46,7 +46,7 @@
     <!--Шапка-->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button-primary" type="button">Заказать услугу</button>
+            <button class="button-primary" type="button" data-modal-open>Заказать услугу</button>
         </section>
     
     <!--Особенности-->
@@ -108,13 +108,16 @@
             <ul class="advanture-list">
               <li class="advanture-item">
                 <img class="img" src="./images/box1.jpg" alt="работа на планшете с клавиатурой" width="370" height="294" />
-              </li> 
+                <p class="advanture-text">Десктопные приложения</p>
+            </li> 
               <li class="advanture-item">
                 <img class="img" src="./images/box2.jpg" alt="Ноутбук + телефон" width="370" height="294" />
-              </li>
+                <p class="advanture-text">Мобильные приложения</p>
+            </li>
               <li class="advanture-item">
                 <img class="img" src="./images/box3.jpg" alt="планшет с ручкой" width="370" height="294" />
-              </li>
+                <p class="advanture-text">Дизайнерские решения</p>
+            </li>
             </ul>
         </div>
     </section>
@@ -322,6 +325,17 @@
            </div>
         </div>
     </footer>
+    <!-- Модальное окно  -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" type="button" data-modal-close>
+               <svg class="icon-close">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+            </button>
+        </div>
+    </div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
